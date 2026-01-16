@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some useful technical terms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    header {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      margin-top: 20px;
+    }
+    .new {
+      color: red;
+      font-weight: bold;
+    }
+    .separator {
+      border: 0;
+      border-top: 1px solid gray;
+      margin: 20px 0;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+  
+<body>
+  <header>
+    <h1>Some useful technical terms</h1>
+  </header>
+
+  <hr class="separator">
+  
+  <div class="content">
+    <h2>Mathmatics</h2>
+    <ul>
+      <li>同胚(Homeomorphism): 两个拓扑空间 \( (X,\mathcal{T}_X) \) 和 \( (Y,\mathcal{T}_Y) \)  之间的函数 \(f: X\to Y\) 称为同胚, 如果它具有下列性质：
+        <ul>
+          <li> \(f\) 是双射;
+          <li> \(f\) 是连续的;
+          <li> \(f^{-1}\) 是连续的.
+        </ul>
+      </li>
+      <li>群同态(Group Homomorphism): 设 \(f:(G,\cdot)\rightarrow (G',*)\) 是一个映射, 若 \(f\) 满足: $$f(ab)=f(a)*f(b)$$ 则称 \(f\) 是群同态.
+      </li>
+    </ul>
+  </div>
+
+  <hr class="separator">
+
+  <div class="content">
+    <h2>Physics</h2>
+    <ul>
+      <li>勒让德变换(Legendre Transformation): 设 \( f(x) \) 是一个凸函数, 定义一个新变量 \(p\)（即斜率）
+        $$p=\frac{df}{dx}=f^\prime(x)$$
+        则 \(f(x)\) 的的勒让德变换函数 \(g(p)\) 定义为
+        $$g(p)=px-f(x)$$
+      </li>
+    </ul>
+  </div>
+  
+  <hr class="separator">
+
+  <div class="content">
+    <h2>Chemistry</h2>
+    <ul>
+      <li>化学势(Chemical Potential): $$\mu=\left(\frac{\partial G}{\partial N}\right)_{T,P}$$ </li>
+      <li>理想稀溶液(Ideal Dilute Solution): $$\mu(T,P)=\mu^\circ(T,P^\circ)+kT\ln(P/P^\circ)$$ </li>
+    </ul>
+  </div>
+</html>
+
